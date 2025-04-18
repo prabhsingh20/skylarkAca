@@ -26,3 +26,7 @@ h1 {
 .fav {
   color: rgb(22, 124, 165);
 }
+.line {
+  background-color: lightgray;
+  height: 20px;
+}
