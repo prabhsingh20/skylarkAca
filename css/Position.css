@@ -2,9 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background-color: #d4eaff;
+}
 h1 {
   color: #fff;
-  background-color: orange;
+  background-color: #2d3e50;
   text-align: center;
   padding: 5px 0;
 }
@@ -51,5 +55,27 @@ h1 {
   background-color: green;
   padding: 10px 100px 10px 10px;
   margin-right: 10px;
+  border-radius: 5px;
+}
+
+.sticky_con {
+  margin-bottom: 30px;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  color: #fff;
+  background-color: purple;
+  padding: 10px 100px 10px 10px;
+  border-radius: 5px;
+  width: 80px;
+}
+
+.dummy {
+  background-color: white;
+  color: black;
+  margin: 15px;
+  padding: 10px;
   border-radius: 5px;
 }
