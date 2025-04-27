@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightcyan;
+  padding: 15px 25px;
+}
+h1 {
+  background-color: lightcoral;
+  padding: 15px;
+  border-radius: 50%;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.nav-links li {
+  padding: 0 30px;
+}
