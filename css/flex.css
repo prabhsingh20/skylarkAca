@@ -2,76 +2,90 @@
   margin: 0;
   padding: 0;
 }
+
 body {
-  color: #e9f5db;
+  color: #d3d0c3;
   background-color: #1b3a2f;
   font-family: "Roboto", sans-serif;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightcoral;
-  padding: 15px 25px;
+  background-color: #6a4e3c;
+  padding: 15px 35px;
+  color: #d8c15c;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
   font-size: 20px;
-  gap: 10px;
+  gap: 55px;
 }
 
 .nav-links li {
-  padding: 0 30px;
-  color: lightcyan;
   cursor: pointer;
 }
+
 .section_1 {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
+
 .container {
-  width: 45%;
+  width: 42%;
   padding: 20px;
 }
+
 .container img {
   width: 100%;
   border-radius: 10px;
 }
+
 .content {
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 40px;
 }
+
 .content h2 {
   font-size: 48px;
-  color: lightcoral;
+  color: #d8c15c;
 }
+
 .content p {
   font-size: 18px;
 }
-.button {
-  width: 80px;
+
+.btn_explore {
+  width: 100px;
   padding: 18px 30px;
   border-radius: 10px;
-  color: lightcyan;
-  background-color: lightcoral;
-  border: 2px solid lightcoral;
+  color: #d8c15c;
+  background-color: #6a4e3c;
+  border: 1px solid #d8c15c;
   font-weight: bold;
   cursor: pointer;
 }
-.button:hover {
-  background-color: lightcyan;
-  color: lightcoral;
+
+.btn_explore:hover {
+  background-color: #d8c15c;
+  color: #6a4e3c;
+  border: 1px solid #6a4e3c;
 }
 
 .section_2 h1 {
   text-align: center;
   text-transform: uppercase;
-  margin: 30px 0;
+  margin: 70px 0 50px 0;
+  color: #d8c15c;
+  font-size: 48px;
 }
 
 .cards_container {
@@ -80,7 +94,6 @@ body {
   padding: 30px 15px;
   display: flex;
   justify-content: space-around;
-  background-color: #4e342e;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -93,25 +106,39 @@ body {
   align-items: center;
   padding: 20px;
   gap: 20px;
-  background-color: lightcyan;
   border-radius: 10px;
+  background-color: #f2e1c1;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .cards img {
   width: 100%;
-  height: auto;
+  height: 250px;
   border-radius: 10px;
 }
-.button_2 {
-  width: 150px;
+
+.cards h3 {
+  font-size: 28px;
+  color: #4c8c4a;
+}
+
+.cards p {
+  font-size: 18px;
+  color: #4c4c4c;
+}
+
+.btn_learn {
   padding: 18px 30px;
   border-radius: 10px;
-  color: lightcyan;
-  background-color: lightcoral;
-  border: 2px solid lightcoral;
+  color: #6a4e3c;
+  background-color: #d8c15c;
+  border: 1px solid #6a4e3c;
   font-weight: bold;
   cursor: pointer;
 }
-.button_2:hover {
-  background-color: lightcyan;
-  color: lightcoral;
+
+.btn_learn:hover {
+  background-color: #6a4e3c;
+  color: #d8c15c;
+  border: 1px solid #d8c15c;
 }
