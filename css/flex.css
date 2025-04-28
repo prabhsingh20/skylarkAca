@@ -2,25 +2,116 @@
   margin: 0;
   padding: 0;
 }
+body {
+  color: #e9f5db;
+  background-color: #1b3a2f;
+  font-family: "Roboto", sans-serif;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightcyan;
+  background-color: lightcoral;
   padding: 15px 25px;
 }
-h1 {
-  background-color: lightcoral;
-  padding: 15px;
-  border-radius: 50%;
-}
+
 .nav-links {
   display: flex;
   list-style: none;
   font-size: 20px;
-  padding-right: 50px;
+  gap: 10px;
 }
 
 .nav-links li {
   padding: 0 30px;
+  color: lightcyan;
+  cursor: pointer;
+}
+.section_1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 45%;
+  padding: 20px;
+}
+.container img {
+  width: 100%;
+  border-radius: 10px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 40px;
+}
+.content h2 {
+  font-size: 48px;
+  color: lightcoral;
+}
+.content p {
+  font-size: 18px;
+}
+.button {
+  width: 80px;
+  padding: 18px 30px;
+  border-radius: 10px;
+  color: lightcyan;
+  background-color: lightcoral;
+  border: 2px solid lightcoral;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: lightcyan;
+  color: lightcoral;
+}
+
+.section_2 h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 30px 0;
+}
+
+.cards_container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 30px 15px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #4e342e;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  background-color: lightcyan;
+  border-radius: 10px;
+}
+.cards img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.button_2 {
+  width: 150px;
+  padding: 18px 30px;
+  border-radius: 10px;
+  color: lightcyan;
+  background-color: lightcoral;
+  border: 2px solid lightcoral;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button_2:hover {
+  background-color: lightcyan;
+  color: lightcoral;
 }
