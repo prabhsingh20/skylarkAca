@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 200px minmax(100px, auto) minmax(200px, auto);
+        grid-template-rows: 1fr 7fr;
+        gap: 10px;
+      }
+      .box {
+        background-color: lightcoral;
+        padding: 20px;
+        font-size: 30px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box:nth-child(1) {
+        background-color: blue;
+      }
+      .box:nth-child(2),
+      :nth-child(5) {
+        background-color: gray;
+      }
+      .box:nth-child(3) {
+        background-color: rgb(20, 121, 161);
+      }
+      .box:nth-child(4) {
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Header</div>
+      <div class="box">Sidebar</div>
+      <div class="box">Main</div>
+      <div class="box">Rightbar</div>
+      <div class="box">Footer</div>
+    </div>
+  </body>
+</html>
