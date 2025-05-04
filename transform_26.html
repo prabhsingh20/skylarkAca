@@ -6,29 +6,42 @@
     <title>Document</title>
     <style>
       body {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-content: center;
         align-items: center;
-        height: 100vh;
         background-color: #f0f0f0;
-        gap: 100px;
+        gap: 150px;
+        padding: 50px;
       }
       .box {
         width: 100px;
         height: 100px;
         background-color: red;
       }
-      .box_1:hover {
+      .box_1 {
         transform: rotate(45deg);
       }
-      .box_2:hover {
-        transform: translateY(100px);
+      .box_2 {
+        transform: translateX(100px);
       }
-      .box_3:hover {
+      .box_3 {
         transform: scale(1.5);
       }
-      .box_4:hover {
+      .box_4 {
         transform: skew(30deg);
+      }
+      .box_5:hover {
+        transform: rotate(250deg);
+      }
+      .box_6:hover {
+        transform: translateY(100px);
+      }
+      .box_7:hover {
+        transform: scale(0.5);
+      }
+      .box_8:hover {
+        transform: skew(150deg);
       }
     </style>
   </head>
@@ -37,5 +50,9 @@
     <div class="box box_2"></div>
     <div class="box box_3"></div>
     <div class="box box_4"></div>
+    <div class="box box_5"></div>
+    <div class="box box_6"></div>
+    <div class="box box_7"></div>
+    <div class="box box_8"></div>
   </body>
 </html>
