@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      body {
+        padding: 50px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: move 10s infinite;
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(0px) rotate(360deg);
+        }
+        25% {
+          transform: translateX(400px) rotate(180deg);
+          background-color: yellow;
+        }
+        50% {
+          transform: translateX(400px) translateY(400px) rotate(360deg);
+          background-color: green;
+        }
+        75% {
+          transform: translateX(0px) translateY(400px) rotate(180deg);
+          background-color: blueviolet;
+        }
+        100% {
+          transform: translateX(0px) translateY(0px) rotate(360deg);
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
