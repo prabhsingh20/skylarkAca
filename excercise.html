@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+      h1 {
+        text-align: center;
+        margin: 50px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        padding: 20px;
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        width: 280px;
+        height: 340px;
+        color: white;
+        border-radius: 10px;
+        background-color: rgba(128, 128, 128, 0.349);
+      }
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .rocket_container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100%;
+      }
+      .rocket {
+        width: 50px;
+        height: 80px;
+        background: linear-gradient(to bottom, rgba(255, 103, 103, 0.644), red);
+        border-radius: 10px;
+      }
+      .stick {
+        width: 10px;
+        height: 10px;
+        background-color: #000;
+        transform: rotate(45deg);
+      }
+      .animation_1:hover {
+        transform: translateY(-200px) skew(5deg);
+        transition: 1s linear;
+      }
+      .animation_2:hover {
+        transform: translateY(-200px) skew(5deg);
+        transition: 1s ease;
+      }
+      .animation_3:hover {
+        transform: translateY(-200px) skew(5deg);
+        transition: 1s ease-in;
+      }
+      .animation_4:hover {
+        transform: translateY(-200px) skew(5deg);
+        transition: 1s ease-out;
+      }
+      .animation_5:hover {
+        transform: translateY(-200px) skew(5deg);
+        transition: 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚀 Rocket Launch Timing</h1>
+    <div class="container">
+      <div class="card">
+        <p>Linear</p>
+        <div class="rocket_container animation_1">
+          <div class="rocket"></div>
+          <div class="stick"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Ease</p>
+        <div class="rocket_container animation_2">
+          <div class="rocket"></div>
+          <div class="stick"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Ease-In</p>
+        <div class="rocket_container animation_3">
+          <div class="rocket"></div>
+          <div class="stick"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Ease-Out</p>
+        <div class="rocket_container animation_4">
+          <div class="rocket"></div>
+          <div class="stick"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <p>Ease-In-Out</p>
+        <div class="rocket_container animation_5">
+          <div class="rocket"></div>
+          <div class="stick"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
