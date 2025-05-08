@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreshCart - Online Grocery Store</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+
+      .nav-links a {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s linear;
+      }
+
+      .nav-links a:hover {
+        color: #ff9800;
+        border-bottom: 2px solid #ff9800;
+        padding-bottom: 2px;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 64px 32px;
+        background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 32px;
+        color: #555;
+      }
+
+      .hero button {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 14px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      .hero button:hover {
+        border: 2px solid #ff9800;
+        background-color: white;
+        color: #ff9800;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 48px 32px;
+        background-color: white;
+      }
+
+      .card {
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        padding: 32px;
+        margin: 16px;
+        flex: 1 1 300px;
+        max-width: 300px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .card h3 {
+        color: #4caf50;
+        margin-bottom: 8px;
+      }
+
+      .card p {
+        color: #555;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 24px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">FreshCart</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Offers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Fresh Groceries Delivered Fast</h1>
+      <p>Your favorite groceries at your doorstep in minutes!</p>
+      <button>Shop Now</button>
+    </section>
+
+    <section class="features">
+      <div class="card">
+        <h3>Wide Variety</h3>
+        <p>From fresh fruits to packaged snacks — we have it all!</p>
+      </div>
+      <div class="card">
+        <h3>Fast Delivery</h3>
+        <p>Get your groceries delivered in as little as 30 minutes.</p>
+      </div>
+      <div class="card">
+        <h3>Best Prices</h3>
+        <p>Enjoy competitive pricing and exclusive deals every day.</p>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 FreshCart. All rights reserved.</footer>
+  </body>
+</html>
