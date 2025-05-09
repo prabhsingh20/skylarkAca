@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0f172a;
+        color: #fff;
+      }
+      header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: #1e293b;
+      }
+      header h1 {
+        color: #1090cd;
+
+        font-size: 24px;
+      }
+      nav ul {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        list-style: none;
+      }
+      nav ul a {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+      }
+      a:hover {
+        color: #1090cd;
+      }
+      .hero {
+        display: grid;
+        grid-template-rows: repeat(2, 40px);
+        align-items: center;
+        justify-items: center;
+        padding: 150px 0;
+        background: linear-gradient(150deg, #12283b, #1090cd);
+      }
+      .hero h2 {
+        font-size: 40px;
+        text-align: center;
+      }
+      .hero p {
+        font-size: 14px;
+        text-align: center;
+      }
+      .cards_container {
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        gap: 20px;
+        padding: 40px;
+        background-color: #1e293b;
+      }
+      .card {
+        background-color: #0f172a;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+      }
+      .card h3 {
+        color: #1090cd;
+
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .grid_layout {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(auto-fit, minmax(100px, 200px));
+        gap: 20px;
+        margin-top: 32px;
+        padding: 40px;
+        background-color: #0f172a;
+      }
+      .grid_card {
+        background-color: #1e293b;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        height: 200px;
+        transition: transform 0.2s ease;
+      }
+      .grid_card:hover {
+        background-color: #1090cd;
+      }
+      .grid_card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .tall {
+        min-height: 400px;
+      }
+      footer {
+        position: relative;
+        background-color: #1e293b;
+        text-align: center;
+        padding: 30px;
+        font-size: 14px;
+        overflow: hidden;
+      }
+      .lines {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        gap: 15px;
+        animation: move 5s linear infinite;
+      }
+      .line {
+        width: 12px;
+        height: 2px;
+        background-color: #1090cd;
+      }
+      @keyframes move {
+        0% {
+          left: -30%;
+        }
+        100% {
+          left: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>⚡ Anish's Students</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to Grid Masterclass</h2>
+      <p>Just pure HTML + CSS Grid that slaps like Thor's hammer.</p>
+    </section>
+
+    <section class="cards_container">
+      <div class="card">
+        <h3>🔧 Tools</h3>
+        <p>
+          Vs Code. Live Server, and your brain. That's all you need to create
+          magic layouts
+        </p>
+      </div>
+      <div class="card">
+        <h3>🎯 Goals</h3>
+        <p>
+          Become confident with CSS Grid and layout full websites with zero
+          JavaScript.
+        </p>
+      </div>
+      <div class="card">
+        <h3>🚀 Boost</h3>
+        <p>
+          All animations, tranitions and responsive power without any external
+          library
+        </p>
+      </div>
+    </section>
+
+    <section class="grid_layout">
+      <div class="grid_card">
+        <h3>🍎 Fruits</h3>
+        <p>Apple, Mango, Banana, Grapes, Orange</p>
+      </div>
+      <div class="grid_card">
+        <h3>🥦 Veggies</h3>
+        <p>Spinach, Broccoli, Carrot, Beetroot</p>
+      </div>
+      <div class="grid_card tall">
+        <h3>🧀 Dairy</h3>
+        <p>Milk, Paneer, Butter, Curd, Cheese</p>
+      </div>
+      <div class="grid_card">
+        <h3>🍪 Packaged</h3>
+        <p>Biscuit, Noodles, Juice, Chips</p>
+      </div>
+      <div class="grid_card">
+        <h3>🥜 Dry Fruits</h3>
+        <p>Almond, Cashew, Dates, Raisins</p>
+      </div>
+      <div class="grid_card tall">
+        <h3>🍞 Bakery</h3>
+        <p>Bread, Bun, Cake, Cookies</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <p>&copy; 2025 Anish's Students Desigend by Mohammed Anish's Students</p>
+    </footer>
+  </body>
+</html>
