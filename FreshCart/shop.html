@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - FreshCart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+
+      .nav-links a {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s linear;
+      }
+
+      .nav-links a:hover {
+        color: #ff9800;
+        border-bottom: 2px solid #ff9800;
+        padding-bottom: 2px;
+      }
+
+      .shop-header {
+        text-align: center;
+        padding: 100px 20px;
+        background-color: #e8f5e9;
+      }
+
+      .shop-header h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 32px;
+        padding: 40px;
+      }
+
+      .product-card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .product-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 16px;
+      }
+
+      .product-card h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+
+      .product-card p {
+        font-size: 16px;
+        margin-bottom: 12px;
+        color: #4caf50;
+        font-weight: bold;
+      }
+
+      .product-card button {
+        background-color: #ff9800;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        border: 2px solid transparent;
+        transition: background 0.3s ease;
+      }
+
+      .product-card button:hover {
+        border: 2px solid #ff9800;
+        background-color: white;
+        color: #ff9800;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 24px 16px;
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">FreshCart</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./myCart.html">My Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="shop-header">
+      <h1>Shop Our Products</h1>
+      <p>Fresh produce, daily essentials, and everything in between.</p>
+    </section>
+
+    <section class="product-grid">
+      <div class="product-card">
+        <img
+          src="https://images.pexels.com/photos/1510392/pexels-photo-1510392.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Apples"
+        />
+        <h3>Fresh Apples</h3>
+        <p>₹80 / kg</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-vector/milk-bottle-realistic_1284-6148.jpg?ga=GA1.1.822069553.1746719853&semt=ais_hybrid&w=740"
+          alt="Milk"
+        />
+        <h3>Organic Milk</h3>
+        <p>₹50 / liter</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/top-view-black-bread-slices-flour-oatmeal-light-ice-blue-pattern-background-with-free-space_179666-47495.jpg?ga=GA1.1.822069553.1746719853&semt=ais_hybrid&w=740"
+          alt="Bread"
+        />
+        <h3>Whole Wheat Bread</h3>
+        <p>₹40</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://img.freepik.com/free-photo/yellow-banana-fruit_74190-4830.jpg?ga=GA1.1.822069553.1746719853&semt=ais_hybrid&w=740"
+          alt="Bananas"
+        />
+        <h3>Bananas</h3>
+        <p>₹30 / kg</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.pexels.com/photos/3980617/pexels-photo-3980617.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Eggs"
+        />
+        <h3>Eggs (12 pcs)</h3>
+        <p>₹60</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.pexels.com/photos/6167332/pexels-photo-6167332.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Chocolate"
+        />
+        <h3>Chocolate</h3>
+        <p>₹60 / pcs</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.pexels.com/photos/1327838/pexels-photo-1327838.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Tomatoes"
+        />
+        <h3>Tomatoes</h3>
+        <p>₹90 / kg</p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.pexels.com/photos/53494/mushroom-fungi-fungus-many-53494.jpeg?auto=compress&cs=tinysrgb&w=600"
+          alt="Mushroom"
+        />
+        <h3>Mushroom</h3>
+        <p>₹120 / kg</p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+
+    <footer>&copy; 2025 FreshCart. All rights reserved.</footer>
+  </body>
+</html>

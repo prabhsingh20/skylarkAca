@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - FreshCart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        font-family: "Segoe UI", sans-serif;
+        display: flex;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 32px;
+        font-weight: bold;
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 50px;
+      }
+
+      .nav-links a {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s linear;
+      }
+
+      .nav-links a:hover {
+        color: #ff9800;
+        border-bottom: 2px solid #ff9800;
+        padding-bottom: 2px;
+      }
+
+      section {
+        flex: 1;
+        display: flex;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding: 32px;
+      }
+      section h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+      }
+      .contact {
+        font-size: 20px;
+        margin: 10px 0;
+      }
+      .number,
+      .gmail {
+        font-size: 24px;
+        font-weight: 600;
+        color: #4caf50;
+      }
+      button {
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        padding: 14px 25px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+
+      button:hover {
+        border: 2px solid #ff9800;
+        background-color: white;
+        color: #ff9800;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 24px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">FreshCart</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./myCart.html">My Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <h1>Contact Us ☎</h1>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p class="contact">
+          Contact: <span class="number">+91 012 345 6789</span>
+        </p>
+        <p>Gmail: <span class="gmail"> freshcart@gmail.com</span></p>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235526.94958711107!2d75.69903474833944!3d22.724204998130634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1746765332616!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <footer>&copy; 2025 FreshCart. All rights reserved.</footer>
+  </body>
+</html>

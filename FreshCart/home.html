@@ -41,7 +41,7 @@
         color: white;
         text-decoration: none;
         font-weight: 500;
-        transition: all 0.3s linear;
+        transition: all 0.2s ease;
       }
 
       .nav-links a:hover {
@@ -52,34 +52,34 @@
 
       .hero {
         text-align: center;
-        padding: 64px 32px;
+        padding: 100px 32px;
         background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
       }
 
       .hero h1 {
         font-size: 48px;
-        margin-bottom: 16px;
+        margin-bottom: 20px;
       }
 
       .hero p {
         font-size: 20px;
-        margin-bottom: 32px;
+        margin-bottom: 40px;
         color: #555;
       }
 
-      .hero button {
+      .btn {
         background-color: #ff9800;
         color: white;
-        border: none;
-        padding: 14px 25px;
+        padding: 12px 25px 14px 25px;
         font-size: 16px;
         border-radius: 5px;
         cursor: pointer;
         border: 2px solid transparent;
+        text-decoration: none;
         transition: all 0.3s ease;
       }
 
-      .hero button:hover {
+      .btn:hover {
         border: 2px solid #ff9800;
         background-color: white;
         color: #ff9800;
@@ -102,6 +102,10 @@
         max-width: 300px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-5px);
       }
 
       .card h3 {
@@ -126,10 +130,10 @@
       <h1 class="logo">FreshCart</h1>
       <nav>
         <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Offers</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./myCart.html">My Cart</a></li>
         </ul>
       </nav>
     </header>
@@ -137,7 +141,7 @@
     <section class="hero">
       <h1>Fresh Groceries Delivered Fast</h1>
       <p>Your favorite groceries at your doorstep in minutes!</p>
-      <button>Shop Now</button>
+      <a class="btn" href="./shop.html">Shop Now</a>
     </section>
 
     <section class="features">
