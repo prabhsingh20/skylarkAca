@@ -94,7 +94,7 @@
         border-radius: 5px;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
         height: 200px;
-        transition: transform 0.2s ease;
+        transition: background-color 1s;
       }
       .grid_card:hover {
         background-color: #36bcf1;
@@ -118,7 +118,8 @@
         position: absolute;
         top: 0;
         left: 0;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(18, 1fr);
         gap: 15px;
         animation: move 5s linear infinite;
       }
