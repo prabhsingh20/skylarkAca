@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #010220;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 100px;
+        align-items: center;
+      }
+      header h1 {
+        font-size: 32px;
+      }
+      nav ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        padding: 0;
+      }
+      nav ul li a {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      nav ul li a:hover {
+        color: #1a98ca;
+        transition: color 0.3s ease;
+      }
+      .home {
+        color: #1a98ca;
+      }
+      section {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 50px 100px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section h2 {
+        font-size: 40px;
+        margin-bottom: 5px;
+      }
+      .position {
+        font-size: 22px;
+        color: #1a98ca;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+      .dummy {
+        font-size: 14px;
+        line-height: 1.5;
+        max-width: 450px;
+        margin-bottom: 30px;
+      }
+      .btn {
+        background-color: #1a98ca;
+        color: #000;
+        border: none;
+        padding: 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-right: 25px;
+      }
+      .talk {
+        background-color: transparent;
+        color: #1a98ca;
+        border: 2px solid #1a98ca;
+      }
+      footer {
+        padding: 20px 90px;
+      }
+      footer div {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #1a98ca;
+        border-radius: 50%;
+        padding: 10px;
+        margin-right: 15px;
+      }
+      footer img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Prabh.</h1>
+      <nav>
+        <ul>
+          <li><a href="#" class="home">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div>
+        <h2>Hi, I'm Prabhjot Singh</h2>
+        <p class="position">Frontend Developer</p>
+        <p class="dummy">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam error
+          nam incidunt magni, architecto sunt. Inventore nam possimus ipsam illo
+          mollitia ratione quisquam sunt rerum qui
+        </p>
+        <div>
+          <button class="btn">Hire Me</button>
+          <button class="btn talk">Let's Talk</button>
+        </div>
+      </div>
+      <img
+        src="./images/Cartoon Man PNG, Vector, PSD, and Clipart With Transparent Background for  Free Download _ Pngtree.png"
+        alt=""
+        class="avatar"
+      />
+    </section>
+    <footer>
+      <div>
+        <img
+          src="./images/3057625_facebook_media_network_social_icon.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <img src="./images/twitter.svg" alt="" />
+      </div>
+      <div>
+        <img
+          src="./images/4202085_linkedin_logo_social_social media_icon.png"
+          alt=""
+        />
+      </div>
+    </footer>
+  </body>
+</html>
