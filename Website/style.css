@@ -28,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 100px;
+  padding: 10px 100px;
 }
 .navbar {
   display: flex;
@@ -69,11 +69,19 @@ header {
 }
 
 .hero {
-  display: flex;
   padding: 30px 100px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/booking_bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
 }
 .hero-content {
-  margin: 100px 0;
+  margin: 110px 0;
   width: 50%;
 }
 .hero h2 {
@@ -108,7 +116,7 @@ header {
 }
 .services {
   margin: 0 auto;
-  padding: 20px 100px;
+  padding: 40px 100px;
 }
 .services h2 {
   width: fit-content;
