@@ -17,69 +17,116 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Book</title>
+    <title>BookEase - Travel Booking Simplified</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header>
+      <h1>Book<span class="highlight">Ease</span></h1>
       <nav class="navbar">
-        <h1>Book<span class="highlight">Ease</span></h1>
         <ul class="nav_link">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Booking</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#booking">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="social-icons">
         <p class="follow">Follow us:</p>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-        <a href=""> <i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
       </div>
     </header>
 
-    <section class="hero">
+    <!-- HERO -->
+    <section id="home" class="hero">
       <div class="hero-content">
-        <p>Quick and easy reservations for your next adventure.</p>
-        <h2>Book Your <span class="highlight">Perfect</span> Experience</h2>
-        <a href="#booking" class="btn"
-          >Book Now <i class="fa-solid fa-arrow-right"></i
-        ></a>
+        <p>Seamless bookings for every journey you dream of.</p>
+        <h2>Your <span class="highlight">Perfect</span> Trip Awaits</h2>
+        <a href="#booking" class="btn">
+          Book Now <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </section>
 
-    <section class="services">
-      <h2>Ser<span class="highlight">vic</span>es</h2>
+    <!-- SERVICES -->
+    <section id="services" class="services">
+      <h2>Our <span class="highlight">Services</span></h2>
       <div class="services_cards">
         <div class="card">
           <div class="card_img">
-            <img src="../images/aeroplane.png" alt="" />
+            <img src="../images/aeroplane.png" alt="Flight Booking" />
           </div>
           <h3>Flight Booking</h3>
         </div>
         <div class="card">
           <div class="card_img">
-            <img src="../images/hotel.png" alt="" />
+            <img src="../images/hotel.png" alt="Hotel Reservations" />
           </div>
           <h3>Hotel Reservations</h3>
         </div>
         <div class="card">
           <div class="card_img">
-            <img src="../images/car.png" alt="" />
+            <img src="../images/car.png" alt="Car Rentals" />
           </div>
           <h3>Car Rentals</h3>
         </div>
         <div class="card">
           <div class="card_img">
-            <img src="../images//train.png" alt="" />
+            <img src="../images/train.png" alt="Train Reservation" />
           </div>
           <h3>Train Reservation</h3>
         </div>
         <div class="card">
           <div class="card_img">
-            <img src="../images/bus.png" alt="" />
+            <img src="../images/bus.png" alt="Bus Reservation" />
           </div>
           <h3>Bus Reservation</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVENTURE SECTION -->
+    <section class="adventure">
+      <div class="adventure_img">
+        <img src="../images/adventure.jpg" alt="Adventure" />
+      </div>
+      <div class="adventure_text">
+        <h5><span class="highlight">Explore</span> the World</h5>
+        <h2>Your Next Journey Begins Here</h2>
+        <p>
+          Whether it's the mountains or the sea, BookEase helps you get there
+          with ease. Plan, book, and enjoy your travels—all in one place.
+        </p>
+        <a href="#booking" class="btn">Get Started</a>
+      </div>
+    </section>
+
+    <!-- DESTINATION HIGHLIGHTS -->
+    <section class="destination">
+      <h2>Destination <span class="highlight">Highlights</span></h2>
+      <div class="boxes">
+        <div class="box_container">
+          <div class="box">
+            <img src="../images/city.jpg" alt="City" />
+          </div>
+          <h3>City Breaks</h3>
+          <p>Discover vibrant city life and culture.</p>
+        </div>
+        <div class="box_container">
+          <div class="box">
+            <img src="../images/mountains.jpg" alt="Mountains" />
+          </div>
+          <h3>Mountain Escapes</h3>
+          <p>Peaceful retreats among scenic peaks.</p>
+        </div>
+        <div class="box_container">
+          <div class="box">
+            <img src="../images/beach.jpg" alt="Beach" />
+          </div>
+          <h3>Beach Holidays</h3>
+          <p>Relax by the waves with perfect sunshine.</p>
         </div>
       </div>
     </section>
