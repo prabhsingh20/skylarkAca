@@ -10,7 +10,7 @@
   --primary-color: #d64700;
   --text-color: #f1f1f1;
   --para-color: #999;
-  --bg-color: #000;
+  --bg-color: #000000f1;
   --h1-font: 2.5rem;
   --h2-font: 1.5rem;
   --p-font: 1rem;
@@ -28,10 +28,15 @@ a {
 
 /* HEADER */
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 99;
 }
 .navbar {
   display: flex;
@@ -248,4 +253,123 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+}
+
+.newsletter {
+  padding: 80px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.newsletter-text {
+  flex: 1 1 45%;
+}
+
+.newsletter-text h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.newsletter-text p {
+  font-size: 1rem;
+  color: var(--para-color);
+}
+
+.newsletter-form {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.newsletter-form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1 1 auto;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+footer {
+  padding: 80px 100px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #000000c7;
+}
+
+.footer_links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--text-color);
+}
+.footer_links h2 {
+  font-size: 32px;
+}
+
+.footer_links a {
+  width: fit-content;
+  font-size: 14px;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.footer_links a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  transform: translateX(5px);
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_icons {
+  padding: 4rem;
+  text-align: center;
+}
+.footer_icon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer_icons a i {
+  display: inline-block;
+  width: 35px;
+  height: auto;
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.footer_icons a i:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
+  border: 1px solid var(--primary-color);
+}
+.copyright {
+  font-size: 14px;
 }
