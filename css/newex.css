@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 3rem;
+  background: linear-gradient(to bottom, #1e74c5, #1e48d3);
+  color: #fff;
+  border-radius: 15px;
+  width: 300px;
+  height: 420px;
+}
+.result {
+  margin-bottom: 1.5rem;
+}
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  background: linear-gradient(to top, #1e74c5, #1e48d3);
+  background-color: #1e48d3;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.marks {
+  font-size: 48px;
+}
+.outof {
+  font-size: 14px;
+  color: #999;
+}
+h4 {
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+.compare {
+  font-size: 14px;
+  color: #ffffffa8;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 3rem 1rem 2rem;
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 350px;
+  gap: 1rem;
+}
+.summary h4 {
+  color: #333;
+}
+.summary_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.title {
+  display: flex;
+  gap: 0.7rem;
+}
+.reaction {
+  color: #b40b0b;
+  background-color: #ff000010;
+}
+.memory {
+  color: #afaf18;
+  background-color: #ffff002c;
+}
+.verbal {
+  color: #109410;
+  background-color: #00ff002c;
+}
+.visual {
+  color: rgb(26, 26, 155);
+  background-color: #0000ff2c;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: #0a2641;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 16px;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.obtained {
+  color: #000;
+}
+.obtained span:nth-child(2) {
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: auto;
+  }
+  .hero {
+    width: 100vw;
+    height: auto;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .summary {
+    margin-top: 1.5rem;
+    background-color: transparent;
+  }
+}
