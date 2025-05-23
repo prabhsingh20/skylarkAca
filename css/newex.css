@@ -17,6 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
+  background-color: #fff;
 }
 .hero {
   display: flex;
@@ -145,6 +146,7 @@ h4 {
     border-bottom-right-radius: 45px;
   }
   .container {
+    background-color: transparent;
     flex-direction: column;
   }
   .summary {
