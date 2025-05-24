@@ -30,7 +30,7 @@
         color: white;
         padding: 40px 40px 20px;
         border-radius: 20px;
-        border: 10px solid lightcoral;
+        border: 4px solid lightcoral;
       }
       .chat_message {
         padding: 10px;
@@ -88,8 +88,8 @@
       }
       .send {
         position: absolute;
-        bottom: 20px;
-        right: 40px;
+        bottom: 22px;
+        right: 55px;
         width: 40px;
         height: 40px;
         background-color: lightcoral;
@@ -101,10 +101,21 @@
         margin-top: 10px;
         cursor: pointer;
       }
+      .camera {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50%;
+        border: 2px solid #fff;
+      }
     </style>
   </head>
   <body>
     <div class="chat_bubble">
+      <div class="camera"></div>
       <p class="chat_message">Hello!</p>
       <p class="chat_message opposite">Hi!</p>
       <p class="chat_message">What's going on?</p>
