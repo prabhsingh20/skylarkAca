@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=photo_camera"
+    />
+    <title>Tooltip</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+      .camera {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        width: 80px;
+        border: 3px solid #00000042;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 50%;
+      }
+      .camera span {
+        font-size: 40px;
+        color: #fff;
+      }
+      .form_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        gap: 2rem;
+        background: linear-gradient(
+          to right,
+
+          #8360c3,
+          #2ebf91
+        );
+      }
+      form {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 2rem;
+        width: 300px;
+      }
+      .email {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 1.5px solid #fff;
+        color: #fff;
+        padding: 1.5rem 0 0.8rem;
+      }
+      input::placeholder {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding-left: 3rem;
+      }
+      button {
+        width: 100%;
+        background-color: rgb(98, 191, 228);
+        border: none;
+        padding: 15px 0;
+        font-weight: 500;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+      }
+      .checkbox {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 13px;
+        color: #ffffffb9;
+        font-weight: 400;
+      }
+      .checkbox div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .copyright {
+        font-size: 11px;
+        color: #ffffff93;
+      }
+      .envelope {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        color: #fff;
+        font-size: 18px;
+      }
+      .lock {
+        position: absolute;
+        left: 10px;
+        top: 104px;
+        color: #fff;
+        font-size: 18px;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+      }
+      .box {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        overflow: hidden;
+        color: white;
+        transition: width 0.3s ease-in-out, background-color 0.4s linear;
+      }
+      a {
+        list-style: none;
+        text-decoration: none;
+      }
+      .icon {
+        font-size: 15px;
+        padding-left: 8px;
+      }
+      .facebook {
+        padding-left: 3px;
+      }
+
+      .box:hover {
+        width: 110px;
+      }
+      .box::after {
+        content: attr(tooltip);
+        margin-left: 10px;
+      }
+
+      .instagram:hover {
+        background-color: #e1306c;
+      }
+      .whatsapp:hover {
+        background-color: #25d366;
+      }
+      .facebook:hover {
+        background-color: #3b5998;
+      }
+      .twitter:hover {
+        background-color: #1da1f2;
+      }
+      .youtube:hover {
+        background-color: #ff0000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_container">
+      <div class="camera">
+        <span class="material-symbols-outlined"> photo_camera </span>
+      </div>
+      <form
+        action="
+      "
+      >
+        <div class="envelope">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="lock">
+          <i class="fa-solid fa-lock"></i>
+        </div>
+        <input class="email" type="email" placeholder="Email ID" required />
+        <input class="email" type="password" placeholder="Password" required />
+        <div class="checkbox">
+          <div><input type="checkbox" /> Remember me</div>
+          <p><em>Forget Password?</em></p>
+        </div>
+        <button type="submit">Login</button>
+        <p class="copyright">Copyright &copy; 2025 Your Brand Name.Inc</p>
+      </form>
+      <div class="container">
+        <a href="">
+          <div class="box instagram" tooltip="Instagram">
+            <div class="icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="box whatsapp" tooltip="Whatsapp">
+            <div class="icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="box twitter" tooltip="Twitter">
+            <div class="icon">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="box facebook" tooltip="Facebook">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="box youtube" tooltip="Youtube">
+            <div class="icon">
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
