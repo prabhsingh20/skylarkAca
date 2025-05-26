@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Table</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      .container {
+        width: 80%;
+        background-color: #181333;
+      }
+      table {
+        width: 100%;
+        text-align: left;
+        border: none;
+        padding: 5px 8px 4px;
+      }
+      th,
+      td {
+        padding: 14px;
+        color: #fff;
+      }
+      .heading {
+        color: #c5344c;
+      }
+      td {
+        color: #999;
+      }
+      .different {
+        background-color: #26375c;
+      }
+      .differ {
+        background-color: #1f2a4d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <th>Sites</th>
+          <th>Views</th>
+          <th>Clicks</th>
+          <th>Average</th>
+        </tr>
+        <tr class="different">
+          <td class="heading">Google</td>
+          <td>9518</td>
+          <td>6369</td>
+          <td>01:32:50</td>
+        </tr>
+        <tr class="differ">
+          <td class="heading">Twitter</td>
+          <td>7326</td>
+          <td>10437</td>
+          <td>00:51:22</td>
+        </tr>
+        <tr class="different">
+          <td class="heading">Amazone</td>
+          <td>4162</td>
+          <td>5327</td>
+          <td>00:24:34</td>
+        </tr>
+        <tr class="differ">
+          <td class="heading">Linkedin</td>
+          <td>3654</td>
+          <td>2961</td>
+          <td>00:12:10</td>
+        </tr>
+        <tr class="different">
+          <td class="heading">CodePen</td>
+          <td>2002</td>
+          <td>4135</td>
+          <td>00:46:19</td>
+        </tr>
+        <tr class="differ">
+          <td class="heading">Github</td>
+          <td>4623</td>
+          <td>3486</td>
+          <td>00:31:52</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

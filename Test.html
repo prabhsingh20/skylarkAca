@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login Form</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Roboto", sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #3b5998;
+      }
+      .form_container {
+        padding: 14px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+      form {
+        border: 1px solid #999;
+        border-radius: 10px;
+      }
+      .fields {
+        display: flex;
+        flex-direction: column;
+        padding: 24px 24px 16px 24px;
+        gap: 24px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      label {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      .input_field {
+        padding: 8px;
+        border: 1px solid #99999998;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .submit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid #999;
+        background-color: #99999944;
+        margin-top: 8px;
+        padding: 16px 24px;
+      }
+      button {
+        padding: 14px 16px;
+        border: none;
+        background-color: #3b5998;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form_container">
+      <form action="/login" method="post">
+        <div class="fields">
+          <div class="container">
+            <label for="username">Username</label>
+            <input class="input_field" type="text" />
+          </div>
+          <div class="container">
+            <label for="password">Password</label>
+            <input class="input_field" type="password" />
+          </div>
+        </div>
+
+        <div class="submit">
+          <button>Login</button>
+          <div><input type="checkbox" /> Stay signed in</div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
