@@ -5,26 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <input type="number" id="number1" placeholder="enter a number" />
+    <input type="number" id="number2" placeholder="enter a number" />
+    <button onclick="addNumber()">Add</button>
+  </body>
   <script>
-    let first_name = "Prabhjot";
-    let last_name = "Singh";
-    let age = 24;
-    let sports = "Cricket";
+    let number = prompt("Guess the Number between 1 to 100");
+    if (number == 50) {
+      alert("You Won 🎉");
+    } else if (number >= 70) {
+      alert("You are not even close😕");
+    } else if (number >= 51) {
+      alert("Too close 🤪");
+    } else if (number <= 30) {
+      alert("You are not even close😕");
+    } else if (number <= 49) {
+      alert("Too close 🤪");
+    } else alert("Enter any number");
 
-    console.log(
-      "Hi, My name is " +
-        first_name +
-        " " +
-        last_name +
-        ". I'm " +
-        age +
-        " year old and I like playing " +
-        sports +
-        "."
-    );
+    function addNumber() {
+      let num1 = document.getElementById("number1").value;
+      let num2 = document.getElementById("number2").value;
+      let result = Number(num1) + Number(num2);
+      alert(result);
+    }
 
-    let userName = prompt("What is your name");
-    alert("Hello " + userName + ", Welcome to the page");
+    // let first_name = "Prabhjot";
+    // let last_name = "Singh";
+    // let age = 24;
+    // let sports = "Cricket";
+
+    // console.log(
+    //   "Hi, My name is " +
+    //     first_name +
+    //     " " +
+    //     last_name +
+    //     ". I'm " +
+    //     age +
+    //     " year old and I like playing " +
+    //     sports +
+    //     "."
+    // );
+
+    // let userName = prompt("What is your name");
+    // alert("Hello " + userName + ", Welcome to the page");
+
+    // let score = 150;
+    // if (score >= 100) {
+    //   console.log("You Won 🎉");
+    // } else {
+    //   console.log("Better luck next time 💔");
+    // }
+
+    // let age = prompt("What is your age ?");
+    // if (age >= 18) {
+    //   alert("Your are eligible for Voting");
+    // } else {
+    //   alert("You are Too young to vote!");
+    // }
   </script>
 </html>
