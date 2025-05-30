@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="value1" placeholder="Enter a number" />
+    <input type="number" id="value2" placeholder="Enter second number" />
+    <br /><br />
+    <button onclick="addNum()">Plus</button>
+    <button onclick="minusNum()">Minus</button>
+    <button onclick="multiplyNum()">Multiply</button>
+    <button onclick="divideNum()">Divide</button>
+    <p id="output"></p>
+  </body>
+  <script>
+    function addNum() {
+      let num1 = Number(document.getElementById("value1").value);
+      let num2 = Number(document.getElementById("value2").value);
+      let result = num1 + num2;
+      document.getElementById("output").innerText = "Result = " + result;
+    }
+    function minusNum() {
+      let num1 = Number(document.getElementById("value1").value);
+      let num2 = Number(document.getElementById("value2").value);
+      let result = num1 - num2;
+      document.getElementById("output").innerText = "Result = " + result;
+    }
+    function multiplyNum() {
+      let num1 = Number(document.getElementById("value1").value);
+      let num2 = Number(document.getElementById("value2").value);
+      let result = num1 * num2;
+      document.getElementById("output").innerText = "Result = " + result;
+    }
+    function divideNum() {
+      let num1 = Number(document.getElementById("value1").value);
+      let num2 = Number(document.getElementById("value2").value);
+      let result;
+      if (num2 === 0) {
+        result = "You cannot divide  number by 0!";
+      } else {
+        result = num1 / num2;
+      }
+      document.getElementById("output").innerText = "Result = " + result;
+    }
+  </script>
+</html>
