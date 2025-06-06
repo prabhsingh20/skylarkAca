@@ -35,7 +35,6 @@
       .container {
         background-color: var(--primary-color);
         margin: 3.5rem;
-        margin-bottom: 0;
         overflow: hidden;
       }
       .header {
@@ -130,7 +129,7 @@
           transform: translateZ(40rem);
         }
         40% {
-          transform: translateZ(-500rem) translateX(150rem);
+          transform: translateZ(-500rem) translateX(100rem);
         }
         70% {
           transform: translateZ(-1500rem) translateX(100rem);
@@ -264,10 +263,9 @@
 
       .contact_bg {
         background: url(../images/images.jpg);
-        background-repeat: no-repeat;
         background-size: cover;
         background-position: top;
-        animation: colorChnage infinite;
+        animation: colorChange 10s infinite;
         padding: 10rem 0;
       }
       @keyframes colorChange {
@@ -284,10 +282,10 @@
           background-color: lightgoldenrodyellow;
         }
         80% {
-          background-color: lightcoral;
+          background-color: lightseagreen;
         }
         100% {
-          background-color: lightblue;
+          background-color: lightsalmon;
         }
       }
       .contact {
@@ -326,17 +324,17 @@
       .submit {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2.5rem;
       }
       .btn {
         font-weight: 700;
-        padding: 1rem 1.5rem !important;
-        border: 1px solid var(--primary-color);
+        border: 1px solid transparent;
+        transition: all 0.5s ease;
       }
       .btn:hover {
-        border: 1px solid var(--text-color);
         background-color: var(--primary-color);
         color: var(--text-color);
+        border: 1px solid var(--text-color);
       }
     </style>
   </head>
@@ -427,7 +425,7 @@
     <section class="stories">
       <div class="video_container">
         <video class="first_video" autoplay loop muted>
-          <!-- <source src="../images/adventure.mp4" type="video/mp4" /> -->
+          <source src="../images/adventure.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="story_wrapper">
@@ -495,7 +493,11 @@
               </div>
             </div>
             <div class="input_group submit">
-              <input type="" placeholder="Your Message" />
+              <textarea
+                rows="10"
+                cols="80"
+                placeholder="Your Message"
+              ></textarea>
               <input type="submit" value="Submit" class="btn" />
             </div>
           </form>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miniver&display=swap"
+      rel="stylesheet"
+    />
+    <title>Coffee</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        background-color: #3e151d;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem 5rem;
+      }
+      .highlight {
+        color: #f0971f;
+      }
+      .navLinks {
+        display: flex;
+        align-items: center;
+        gap: 2.2rem;
+        list-style: none;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+      .navLinks a {
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        transition: all 0.3s ease-in-out;
+        padding: 0 0.4rem;
+      }
+      .navLinks a:hover {
+        color: #f0971f;
+        border-left: 1px solid #f0971f;
+        border-right: 1px solid #f0971f;
+      }
+      .navLinks a {
+        text-decoration: none;
+        color: #fff;
+      }
+      section {
+        display: flex;
+        align-items: center;
+      }
+      .content_side {
+        display: flex;
+        flex-direction: column;
+        padding: 7rem 5rem;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 500px;
+      }
+
+      .details h4 {
+        font-family: "Miniver", cursive;
+        color: #f0971f;
+        font-size: 2rem;
+      }
+      .details h3 {
+        font-size: 2.2rem;
+      }
+      .details p {
+        color: #c5c5c5;
+        line-height: 1.5rem;
+      }
+      .image_side {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .coffeemug {
+        width: 450px;
+        height: auto;
+        z-index: 1;
+        animation: float 4s infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .btn_con {
+        display: flex;
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+      .btn {
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        border-radius: 30px;
+        transition: all 0.3s ease-in-out;
+      }
+      .order_btn {
+        background-color: #f0971f;
+        color: #3e151d;
+        border: none;
+      }
+      .order_btn:hover {
+        background-color: #bd6b00;
+      }
+      .contact_btn {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+      }
+
+      .contact_btn:hover {
+        border: 1px solid #f0971f;
+        color: #f0971f;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Co<span class="highlight">ff</span>ee</h1>
+      <nav>
+        <ul class="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Gallary</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="content_side">
+        <div class="details">
+          <h4>Best Coffee</h4>
+          <h3>Make your day great with our special coffee!</h3>
+          <p>
+            Welcome to our coffee paradise where every bean tells a story and
+            every cup sparks joy.
+          </p>
+        </div>
+        <div class="btn_con">
+          <button class="order_btn btn">Order Now</button>
+          <button class="contact_btn btn">Contact Us</button>
+        </div>
+      </div>
+      <div class="image_side">
+        <div>
+          <img src="./images/coffee.png" alt="" class="coffeemug" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
