@@ -9,12 +9,33 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="food.css" />
     <title>Food Website</title>
   </head>
   <body>
     <header class="header">
-      <a href="#" class="logo">F<span class="highlight">oo</span>d</a>
+      <div class="logo">
+        <p>Healthy</p>
+        <p>Food</p>
+        <span class="material-symbols-outlined leaf"> eco </span>
+      </div>
       <nav>
         <ul class="navbar">
           <li><a href="#how" class="nav_links">How It Work's</a></li>
@@ -25,6 +46,7 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="hero">
         <div class="hero-text-box">
@@ -41,35 +63,32 @@
 
           <div class="img-container">
             <div class="people-images">
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740"
-                alt="Customer"
-              />
-
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740"
-                alt="Customer"
-              />
-
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740"
-                alt="Customer"
-              />
-
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740"
-                alt="Customer"
-              />
-
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740"
-                alt="Customer"
-              />
-
-              <img
-                src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_hybrid&w=740"
-                alt="Customer"
-              />
+              <div class="people-images">
+                <img
+                  src="https://randomuser.me/api/portraits/women/65.jpg"
+                  alt="Customer"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/men/44.jpg"
+                  alt="Customer"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/women/22.jpg"
+                  alt="Customer"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/men/12.jpg"
+                  alt="Customer"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/women/34.jpg"
+                  alt="Customer"
+                />
+                <img
+                  src="https://randomuser.me/api/portraits/men/28.jpg"
+                  alt="Customer"
+                />
+              </div>
             </div>
             <p class="total-cust">
               <span>300,000+</span> happy customers this year!
@@ -108,10 +127,9 @@
               <span>01</span>
               <h3>Tell us what you like (and what not)</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laboriosam maxime quis ducimus omnis dolore, ullam nesciunt
-                accusamus itaque maiores, nam deleniti eligendi eaque, provident
-                dolores!
+                Choose your favorite meals, set your dietary needs, and select
+                your portion size. Whether you’re vegan, keto, or gluten-free –
+                we’ve got you covered.
               </p>
             </div>
             <div class="right_image">
@@ -132,13 +150,119 @@
             </div>
             <div class="left-text">
               <span>02</span>
-              <h3>Tell us what you like (and what not)</h3>
+              <h3>We cook & deliver fresh meals</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laboriosam maxime quis ducimus omnis dolore, ullam nesciunt
-                accusamus itaque maiores, nam deleniti eligendi eaque, provident
-                dolores!
+                Our chefs prepare your selected meals with fresh ingredients and
+                deliver them right to your door—ready to heat and eat, no
+                cooking required!
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="meals" class="section_meals">
+        <div class="container">
+          <h6>Meals</h6>
+          <h2>Explore Our Delicious Meal Options</h2>
+          <div class="meal-cards">
+            <!-- Meal 1 -->
+            <div class="meal-card">
+              <div class="meal-img-box">
+                <img
+                  src="https://cdn.pixabay.com/photo/2024/04/28/09/42/ai-generated-8725190_640.png"
+                  alt="Spaghetti Bolognese"
+                  class="meal-img"
+                />
+              </div>
+              <div class="meal-details-box">
+                <span class="tag non-veg-tag">Italian</span>
+                <h3>Spaghetti Bolognese</h3>
+                <ul class="meal-info">
+                  <li>
+                    <i class="fa-solid fa-fire-flame-curved meal-icons"></i>
+                    <div>
+                      <strong>550</strong>
+                      calories
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-utensils meal-icons"></i>
+                    <div>
+                      Nutri Score
+                      <strong>(82)</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-star meal-icons"></i>
+                    <div><strong>4.8</strong> Rating (910)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Meal 2 -->
+            <div class="meal-card">
+              <div class="meal-img-box">
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/05/02/01/04/miso-soup-749368_640.jpg"
+                  alt="Vegetable Soup"
+                  class="meal-img"
+                />
+              </div>
+              <div class="meal-details-box">
+                <span class="tag">Vegan</span>
+                <h3>Hearty Vegetable Soup</h3>
+                <ul class="meal-info">
+                  <li>
+                    <i class="fa-solid fa-fire-flame-curved meal-icons"></i>
+                    <div>
+                      <strong>220</strong>
+                      calories
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-utensils meal-icons"></i>
+                    <div>
+                      Nutri Score
+                      <strong>(91)</strong>
+                    </div>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-star meal-icons"></i>
+                    <div><strong>4.6</strong> Rating (601)</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Meal 3 -->
+            <div class="meal-card">
+              <div class="meal-img-box">
+                <img
+                  src="https://media.istockphoto.com/id/491788887/photo/homemade-baja-fish-tacos.jpg?s=612x612&w=0&k=20&c=fed3j3tBn3pbBoKZchJRI6UqT01hNW5rXVF0wS2KJeA="
+                  alt="Fish Tacos"
+                  class="meal-img"
+                />
+              </div>
+              <div class="meal-details-box">
+                <span class="tag non-veg-tag">Seafood</span>
+                <h3>Spicy Fish Tacos</h3>
+                <ul class="meal-info">
+                  <li>
+                    <i class="fa-solid fa-fire-flame-curved meal-icons"></i>
+                    <div><strong>430</strong> calories</div>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-utensils meal-icons"></i>
+                    <div>Nutri Score <strong>(78)</strong></div>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-star meal-icons"></i>
+                    <div><strong>4.9</strong> Rating (851)</div>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
