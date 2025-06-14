@@ -5,6 +5,7 @@
 }
 html {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Rubik", sans-serif;
@@ -197,8 +198,10 @@ a {
   padding: 0 3.2rem;
 }
 .container h6 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #e65c2d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .container h2 {
   font-size: 3rem;
@@ -335,4 +338,60 @@ a {
 }
 .bold {
   font-weight: bold;
+}
+
+.section_testamonials {
+  max-width: 130rem;
+  margin: 5rem auto;
+  padding: 0 3.2rem;
+}
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.testamonials h6 {
+  font-size: 1.3rem;
+  color: #e65c2d;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.testamonials h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-top: 1rem;
+}
+.reviews {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.review-card {
+  margin-top: 1rem;
+  padding: 0 1rem;
+}
+.review-card img {
+  border-radius: 50%;
+}
+
+.meals-gallary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.gallary-item {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+}
+.gallary-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s linear;
+}
+.gallary-item img:hover {
+  transform: scale(1.1);
 }
