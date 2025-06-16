@@ -26,6 +26,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="food.css" />
     <title>Food Website</title>
   </head>
@@ -48,6 +56,7 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
       <section class="hero">
         <div class="hero-text-box">
           <h1>
@@ -105,6 +114,7 @@
         </div>
       </section>
 
+      <!-- Featured Section -->
       <section class="section-featured">
         <div class="featured-container">
           <h2 class="heading-featured">As featured in</h2>
@@ -118,6 +128,7 @@
         </div>
       </section>
 
+      <!-- How It Works Section -->
       <section class="section_how" id="how">
         <div class="container">
           <h6>How It Work's</h6>
@@ -161,6 +172,7 @@
         </div>
       </section>
 
+      <!-- Meals Section-->
       <section id="meals" class="section_meals">
         <div class="container">
           <h6>Meals</h6>
@@ -268,6 +280,7 @@
         </div>
       </section>
 
+      <!-- Testamonials Section -->
       <section class="section_testamonials">
         <div class="reviews-container">
           <div class="testamonials">
@@ -373,6 +386,105 @@
                 alt=""
               />
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="section_pricing" id="pricing">
+        <div class="container">
+          <h6>Plans</h6>
+          <h2>Select the Ideal Meal Subscription</h2>
+          <div class="pricing-cards">
+            <div class="pricing-card">
+              <h3>Basic</h3>
+              <p class="price">₹29,999</p>
+              <p class="plan-description">
+                Perfect for individuals looking for simple and flexible meal
+                options.
+              </p>
+
+              <ul class="plan-features">
+                <li class="features-list">
+                  <span>✔</span>
+                  <p>Available from 10am to 8pm</p>
+                </li>
+                <li class="features-list">
+                  <span>✔</span>
+                  <p>No delivery charges</p>
+                </li>
+                <li class="features-list">
+                  <span>✔</span>
+                  <p>Minimum order of ₹899</p>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-select">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+              <h3>Premium</h3>
+              <p class="price">₹54,999</p>
+              <p class="plan-description">
+                Ideal for families or food lovers who want complete daily
+                coverage.
+              </p>
+
+              <ul class="plan-features">
+                <li class="features-list">
+                  <span>✔</span>
+                  <p>3 meals a day included</p>
+                </li>
+                <li class="features-list">
+                  <span>✔</span>
+                  <p>Available 24/7</p>
+                </li>
+                <li class="features-list">
+                  <span>✔</span>
+                  <p>Exclusive recipes every week</p>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-select">Subscribe Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <aside class="plan-details">
+            All prices are inclusive of taxes. Cancel anytime with no extra
+            charges. Both plans come with:
+          </aside>
+        </div>
+
+        <div class="features-container">
+          <div class="feature">
+            <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+            <p class="feature-title">No cooking hassle</p>
+            <p class="feature-text">
+              Enjoy fresh meals every day of the year — even on festivals and
+              holidays.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+            <p class="feature-title">Farm-fresh ingredients</p>
+            <p class="feature-text">
+              Every meal is crafted using locally sourced, organic ingredients.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+            <p class="feature-title">Eco-friendly packaging</p>
+            <p class="feature-text">
+              All meals come in 100% reusable and sustainable containers.
+            </p>
+          </div>
+          <div class="feature">
+            <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+            <p class="feature-title">Flexible subscription</p>
+            <p class="feature-text">
+              Need a break? Pause your plan anytime and get credits for unused
+              days.
+            </p>
           </div>
         </div>
       </section>

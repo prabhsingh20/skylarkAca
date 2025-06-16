@@ -74,6 +74,8 @@ a {
 .try:hover {
   background-color: #fff;
 }
+
+/* Hero Section */
 .hero {
   max-width: 130rem;
   margin: 3rem auto;
@@ -167,6 +169,7 @@ a {
   font-weight: 700;
 }
 
+/* Featured Section */
 .section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -192,6 +195,7 @@ a {
   opacity: 50%;
 }
 
+/* How It Works Section */
 .section_how {
   max-width: 130rem;
   margin: 5rem auto;
@@ -263,6 +267,7 @@ a {
   width: 35%;
 }
 
+/* Meals Section */
 .section_meals {
   max-width: 130rem;
   margin: 5rem auto;
@@ -340,9 +345,10 @@ a {
   font-weight: bold;
 }
 
+/* Testamonials Section */
 .section_testamonials {
   max-width: 130rem;
-  margin: 5rem auto;
+  margin: 6rem auto;
   padding: 0 3.2rem;
 }
 .reviews-container {
@@ -359,23 +365,29 @@ a {
 }
 .testamonials h2 {
   font-size: 3rem;
-  line-height: 1.2;
-  margin-top: 1rem;
+  line-height: 1.1;
+  margin-top: 0.5rem;
 }
 .reviews {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
+  gap: 2.5rem;
 }
 .review-card {
-  margin-top: 1rem;
   padding: 0 1rem;
 }
 .review-card img {
+  height: 4rem;
+  margin-bottom: 0.5rem;
   border-radius: 50%;
 }
-
+.review-content {
+  line-height: 1.4;
+}
+.review-content h4 {
+  margin-top: 0.5rem;
+}
 .meals-gallary {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -383,7 +395,7 @@ a {
 }
 .gallary-item {
   width: 100%;
-  height: 12rem;
+  height: 10rem;
   overflow: hidden;
 }
 .gallary-item img {
@@ -394,4 +406,121 @@ a {
 }
 .gallary-item img:hover {
   transform: scale(1.1);
+}
+
+/* Pricing Section */
+.section_pricing {
+  max-width: 130rem;
+  margin: 5rem auto;
+  padding: 0 3.2rem;
+}
+.pricing-cards {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+.pricing-card {
+  width: 22rem;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #fdf2e9;
+  padding: 3rem 2rem;
+}
+.pricing-card h3 {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #e65c2d;
+}
+.price {
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+.plan-description {
+  font-size: 0.8rem;
+  color: #777;
+  padding: 0.5rem 0 0.8rem;
+}
+.plan-features {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+.features-list {
+  display: flex;
+  gap: 0.5rem;
+}
+.features-list span {
+  color: #e65c2d;
+}
+.btn-select {
+  display: inline-block;
+  width: 100%;
+  background-color: #e65c2d;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.pricing-card:nth-child(2) {
+  position: relative;
+  background-color: #e65b2d13;
+  overflow: hidden;
+}
+.pricing-card:nth-child(2)::after {
+  content: "Best Value";
+  position: absolute;
+  padding: 0.5rem 6rem;
+  background-color: #e65c2d;
+  color: #fff;
+  transform: rotate(45deg);
+  top: 6%;
+  right: -25%;
+}
+
+.plan-details {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+  margin-top: 4rem;
+}
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e67e22;
+  height: 2rem;
+  width: 2rem;
+  background-color: #fdf2e9;
+  padding: 0.6rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: #777;
 }
