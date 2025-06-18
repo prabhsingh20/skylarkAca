@@ -535,7 +535,7 @@ a {
 
 .cta-box {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 60% 38%;
   align-items: center;
   gap: 2rem;
 }
@@ -615,4 +615,69 @@ a {
   height: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  max-width: 130rem;
+  margin: 5rem auto;
+  padding: 0 3.2rem;
+}
+
+.footer-sections {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-sections h6 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.footer-links a,
+.footer-links p {
+  width: fit-content;
+  list-style: none;
+  color: #777;
+  font-size: 0.9rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s linear;
+}
+.footer-links a:hover {
+  color: #e65c2d;
+  border-bottom: 1px solid #e65c2d;
+}
+.contact {
+  margin-top: 0.5rem;
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+.logo-container p {
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 4rem;
+}
+.icons-container h5 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+.icons-container div {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 1rem;
+  color: #777;
+  transition: all 0.3s linear;
+}
+.icons-container span:hover {
+  color: #e65c2d;
 }
