@@ -1,0 +1,136 @@
+:root {
+  --main-color: #ff82ac;
+  --bg-color: #fff1f5;
+  --primary-color: #e91e63;
+  --secondary-color: #d291bc;
+  --text-color: #2d2d2d;
+  --paragraph-color: #5a5a5a;
+  --heading-color: #7b1e7a;
+  --link-color: #ff6f91;
+  --button-text-color: #ffffff;
+  --border-color: #eedce3;
+
+  --border-radius-md: 5px;
+
+  --transition-timing: 0.3s ease;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overscroll-behavior: contain;
+  background-color: var(--bg-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+span,
+ion-icon {
+  display: inline-block;
+  transition: inherit;
+}
+button {
+  cursor: pointer;
+}
+.header-top,
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.5rem 6rem;
+  width: 100%;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.icons {
+  font-size: 1.2rem;
+  color: var(--paragraph-color);
+  transition: all var(--transition-timing);
+}
+.icons ion-icon:hover {
+  color: var(--link-color);
+  transform: scale(1.1);
+}
+.header-alert {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: var(--paragraph-color);
+}
+.select-container select {
+  position: relative;
+  min-width: 80px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border: none;
+  color: var(--paragraph-color);
+  padding: 5px;
+  transition: all var(--transition-timing);
+}
+.select-container select:hover {
+  color: var(--text-color);
+}
+
+.logo {
+  height: 2rem;
+}
+.search-container {
+  position: relative;
+}
+.search-feild {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: var(--border-radius-md);
+  width: 20rem;
+  color: var(--paragraph-color);
+  outline: none;
+}
+.search-icon {
+  position: absolute;
+  top: 55%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--paragraph-color);
+}
+.user-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.action-button {
+  position: relative;
+  background: transparent;
+  font-size: 1.8rem;
+  border: none;
+  color: var(--paragraph-color);
+}
+.count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.8rem;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: red;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--button-text-color);
+}
