@@ -10,7 +10,7 @@
   --button-text-color: #ffffff;
   --border-color: #eedce3;
 
-  --border-radius-md: 5px;
+  --border-radius-sm: 5px;
 
   --transition-timing: 0.3s ease;
 }
@@ -26,6 +26,7 @@ body {
   font-family: "Poppins", sans-serif;
   overscroll-behavior: contain;
   background-color: var(--bg-color);
+  scroll-behavior: smooth;
 }
 a {
   text-decoration: none;
@@ -47,8 +48,11 @@ button {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-color);
-  padding: 1.5rem 6rem;
+  padding: 1rem 6rem;
   width: 100%;
+}
+.header-main {
+  padding: 1.5rem 6rem;
 }
 .social-icons {
   display: flex;
@@ -62,7 +66,7 @@ button {
 }
 .icons ion-icon:hover {
   color: var(--link-color);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 .header-alert {
   text-transform: uppercase;
@@ -77,10 +81,14 @@ button {
   border: none;
   color: var(--paragraph-color);
   padding: 5px;
+  background-color: transparent;
   transition: all var(--transition-timing);
+  margin-left: 0.5rem;
+  outline: none;
 }
-.select-container select:hover {
-  color: var(--text-color);
+.select-container select:hover,
+select:focus {
+  color: var(--primary-color);
 }
 
 .logo {
@@ -91,11 +99,13 @@ button {
 }
 .search-feild {
   border: 1px solid var(--border-color);
-  padding: 1rem;
-  border-radius: var(--border-radius-md);
-  width: 20rem;
+  padding: 0.8rem 1rem;
+  border-radius: var(--border-radius-sm);
+  width: 40rem;
   color: var(--paragraph-color);
-  outline: none;
+}
+.search-feild:focus {
+  outline: 1px solid var(--primary-color);
 }
 .search-icon {
   position: absolute;
@@ -133,4 +143,99 @@ button {
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--button-text-color);
+}
+main {
+  margin: 2rem;
+}
+.category-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12rem;
+}
+.category-links {
+  color: var(--paragraph-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.image-scroll-section {
+  margin: 2rem 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2rem;
+}
+
+.image-card {
+  display: flex;
+  align-items: center;
+  height: 30rem;
+  border-radius: 15px;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card-content {
+  width: 30rem;
+  margin-left: 5rem;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.card-content h2 {
+  font-size: 3.5rem;
+  color: var(--text-color);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 0.5rem;
+}
+.card-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--paragraph-color);
+  margin-top: 0.5rem;
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.image-card-1 {
+  background-image: url("./images/hero-bg.png");
+}
+.image-card-2 {
+  background-image: url("./images/hero-bg-2.png");
+}
+.perfume-heading {
+  color: var(--button-text-color) !important;
+}
+.perfume-price {
+  color: var(--border-color) !important;
+}
+.image-card-4 {
+  background-image: url("./images/hero-bg-4.png");
+}
+.shop-btn {
+  padding: 0.6rem 1.4rem;
+  color: var(--button-text-color);
+  background-color: var(--link-color);
+  border-radius: 5px;
+  border: none;
+  margin-top: 0.7rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
