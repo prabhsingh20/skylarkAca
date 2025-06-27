@@ -157,13 +157,107 @@ main {
   color: var(--paragraph-color);
   font-weight: 600;
   text-transform: uppercase;
+  padding-bottom: 0.4rem;
+}
+.category-links:hover {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
+/* Mega Menu Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.mega-menu {
+  position: absolute;
+  top: 2rem;
+  left: -15rem;
+  width: 85vw;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  display: none;
+  z-index: 999;
+  gap: 8rem;
+  border-top: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.dropdown:hover .mega-menu {
+  display: flex;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menu-column h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  width: 9rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu-column a {
+  color: var(--paragraph-color);
+  font-size: 1rem;
+  transition: all var(--transition-timing);
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+}
+
+.menu-column a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.simple-dropdown {
+  position: absolute;
+  width: 12rem;
+  top: 2rem;
+  left: 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown:hover .simple-dropdown {
+  display: block;
+}
+
+.simple-dropdown li {
+  margin-bottom: 0.8rem;
+}
+
+.simple-dropdown li:last-child {
+  margin-bottom: 0;
+}
+
+.simple-dropdown a {
+  color: var(--paragraph-color);
+  font-size: 1rem;
+  transition: all var(--transition-timing);
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+}
+
+.simple-dropdown a:hover {
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+/* image-scroll-section */
 .image-scroll-section {
   margin: 2rem 0;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .image-container {
@@ -218,6 +312,9 @@ main {
 }
 .image-card-2 {
   background-image: url("./images/hero-bg-2.png");
+}
+.image-card-3 {
+  background-image: url("./images/hero-bg-3.png");
 }
 .perfume-heading {
   color: var(--button-text-color) !important;
